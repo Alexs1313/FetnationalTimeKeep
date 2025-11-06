@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08F818424BC14205BD69E3C6 /* RedHatDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1C61A22F364D51B5E442C6 /* RedHatDisplay-Regular.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-FetnationalTimeKeep.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-FetnationalTimeKeep.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D96823EE4714D3FB09BFBA9 /* RedHatDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2B0BCA365144FF582713DEC /* RedHatDisplay-ExtraBold.ttf */; };
+		5CD118103A484910B7E46FFC /* RedHatDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D68A65F228D84887A31B188F /* RedHatDisplay-Medium.ttf */; };
 		6ED48ECB417E12D0BB42C7B6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		89731794745C4D78BEE9D522 /* RedHatDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 773497E9FCA44B6AA9E53B81 /* RedHatDisplay-Black.ttf */; };
+		A7DBD45A52C94051BA832D7A /* RedHatDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEC700676079430DBB043E48 /* RedHatDisplay-Light.ttf */; };
+		B5C9993950AD49EE82CCD52C /* RedHatDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1E7D6177A9417095C6DC66 /* RedHatDisplay-SemiBold.ttf */; };
+		D7520D8A3AB2443980A5C89C /* RedHatDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F23C03C571B408FB9513470 /* RedHatDisplay-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +30,15 @@
 		5709B34CF0A7D63546082F79 /* Pods-FetnationalTimeKeep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetnationalTimeKeep.release.xcconfig"; path = "Target Support Files/Pods-FetnationalTimeKeep/Pods-FetnationalTimeKeep.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-FetnationalTimeKeep.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FetnationalTimeKeep.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FetnationalTimeKeep/AppDelegate.swift; sourceTree = "<group>"; };
+		773497E9FCA44B6AA9E53B81 /* RedHatDisplay-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Black.ttf"; path = "../assets/fonts/RedHatDisplay-Black.ttf"; sourceTree = "<group>"; };
+		7F23C03C571B408FB9513470 /* RedHatDisplay-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Bold.ttf"; path = "../assets/fonts/RedHatDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FetnationalTimeKeep/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F1E7D6177A9417095C6DC66 /* RedHatDisplay-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-SemiBold.ttf"; path = "../assets/fonts/RedHatDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		D68A65F228D84887A31B188F /* RedHatDisplay-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Medium.ttf"; path = "../assets/fonts/RedHatDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		DB1C61A22F364D51B5E442C6 /* RedHatDisplay-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Regular.ttf"; path = "../assets/fonts/RedHatDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EEC700676079430DBB043E48 /* RedHatDisplay-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-Light.ttf"; path = "../assets/fonts/RedHatDisplay-Light.ttf"; sourceTree = "<group>"; };
+		F2B0BCA365144FF582713DEC /* RedHatDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "RedHatDisplay-ExtraBold.ttf"; path = "../assets/fonts/RedHatDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		306C183FF32F48A79FC9549A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				773497E9FCA44B6AA9E53B81 /* RedHatDisplay-Black.ttf */,
+				7F23C03C571B408FB9513470 /* RedHatDisplay-Bold.ttf */,
+				F2B0BCA365144FF582713DEC /* RedHatDisplay-ExtraBold.ttf */,
+				EEC700676079430DBB043E48 /* RedHatDisplay-Light.ttf */,
+				D68A65F228D84887A31B188F /* RedHatDisplay-Medium.ttf */,
+				DB1C61A22F364D51B5E442C6 /* RedHatDisplay-Regular.ttf */,
+				8F1E7D6177A9417095C6DC66 /* RedHatDisplay-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +103,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				306C183FF32F48A79FC9549A /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +190,13 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				6ED48ECB417E12D0BB42C7B6 /* PrivacyInfo.xcprivacy in Resources */,
+				89731794745C4D78BEE9D522 /* RedHatDisplay-Black.ttf in Resources */,
+				D7520D8A3AB2443980A5C89C /* RedHatDisplay-Bold.ttf in Resources */,
+				2D96823EE4714D3FB09BFBA9 /* RedHatDisplay-ExtraBold.ttf in Resources */,
+				A7DBD45A52C94051BA832D7A /* RedHatDisplay-Light.ttf in Resources */,
+				5CD118103A484910B7E46FFC /* RedHatDisplay-Medium.ttf in Resources */,
+				08F818424BC14205BD69E3C6 /* RedHatDisplay-Regular.ttf in Resources */,
+				B5C9993950AD49EE82CCD52C /* RedHatDisplay-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +227,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FetnationalTimeKeep/Pods-FetnationalTimeKeep-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FetnationalTimeKeep/Pods-FetnationalTimeKeep-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -230,9 +270,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FetnationalTimeKeep/Pods-FetnationalTimeKeep-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FetnationalTimeKeep/Pods-FetnationalTimeKeep-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -273,7 +317,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FetnationalTimeKeep;
 				PRODUCT_NAME = FetnationalTimeKeep;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -300,7 +344,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FetnationalTimeKeep;
 				PRODUCT_NAME = FetnationalTimeKeep;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -376,10 +420,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -448,10 +489,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
