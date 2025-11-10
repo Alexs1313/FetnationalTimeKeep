@@ -79,10 +79,17 @@ const TimeKeepCreateAccount = () => {
   return (
     <TimeKeepLayout>
       <View style={styles.timekeepcn}>
-        <Image
-          source={require('../../assets/images/timekeeponb5.png')}
-          style={styles.timekeeplogo}
-        />
+        {Platform.OS === 'ios' ? (
+          <Image
+            source={require('../../assets/images/timekeeponb5.png')}
+            style={styles.timekeeplogo}
+          />
+        ) : (
+          <Image
+            source={require('../../assets/images/andrlogo.png')}
+            style={styles.timekeeplogo}
+          />
+        )}
 
         <View style={styles.timekeeepregcn}>
           <Text style={styles.timekeeptitle}>Registration</Text>
@@ -206,6 +213,7 @@ const styles = StyleSheet.create({
     height: 110,
     alignSelf: 'center',
     marginBottom: 40,
+    borderRadius: 32,
   },
   timekeeepregcn: {
     width: '100%',
@@ -228,7 +236,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   timekeepinput: {
-    height: 46,
+    paddingVertical: 12,
     borderRadius: 10,
     borderWidth: 1,
     borderColor: '#373737',

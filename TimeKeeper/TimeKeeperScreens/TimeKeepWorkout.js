@@ -454,7 +454,7 @@ const TimeKeepWorkout = () => {
                       { height: 73 },
                     ]}
                   >
-                    <Text style={[styles.timeKeepBtnText, { fontSize: 20 }]}>
+                    <Text style={[styles.timeKeepBtnText, { fontSize: 18 }]}>
                       FINISH TRAINING
                     </Text>
                   </View>
@@ -744,23 +744,24 @@ const styles = StyleSheet.create({
     borderColor: '#444',
     borderRadius: 10,
     paddingVertical: 12,
-    paddingHorizontal: 26,
+    paddingHorizontal: 20,
   },
   timeKeepCancelText: {
     color: '#fff',
     fontFamily: 'RedHatDisplay-SemiBold',
+    fontSize: 14,
   },
   timeKeepDelBtn: {
     backgroundColor: '#B02426',
     borderRadius: 10,
     paddingVertical: 12,
-    paddingHorizontal: 26,
+    paddingHorizontal: 20,
   },
   timeKeepDelText: {
     color: '#fff',
     fontFamily: 'RedHatDisplay-SemiBold',
+    fontSize: 14,
   },
-
   timekeepphotoGradient: {
     borderRadius: 10,
     width: '50%',
@@ -839,7 +840,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 26,
+    paddingHorizontal: 14,
   },
   timeKeepBtnText: {
     fontSize: 16,

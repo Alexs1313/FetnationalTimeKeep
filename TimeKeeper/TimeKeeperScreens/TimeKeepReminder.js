@@ -610,7 +610,7 @@ const styles = StyleSheet.create({
   timeKeepDeleteBox: {
     backgroundColor: '#1A1A1A',
     borderRadius: 30,
-    width: '70%',
+    width: '80%',
     padding: 22,
     paddingVertical: 32,
   },
@@ -622,14 +622,15 @@ const styles = StyleSheet.create({
   },
   timeKeepDeleteRow: {
     flexDirection: 'row',
-    gap: 20,
+    gap: 10,
+    justifyContent: 'center',
   },
   timeKeepCancelBtn: {
     borderWidth: 1,
     borderColor: '#444',
     borderRadius: 10,
     paddingVertical: 12,
-    paddingHorizontal: 26,
+    paddingHorizontal: 20,
   },
   timeKeepCancelText: {
     color: '#fff',
@@ -639,7 +640,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#B02426',
     borderRadius: 10,
     paddingVertical: 12,
-    paddingHorizontal: 26,
+    paddingHorizontal: 20,
   },
   timeKeepDelText: {
     color: '#fff',

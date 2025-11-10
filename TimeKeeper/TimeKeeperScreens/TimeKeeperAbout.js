@@ -19,7 +19,16 @@ const TimeKeeperHome = () => {
   const shareTimeKeepAboutInfo = async () => {
     try {
       await Share.share({
-        message: `Fetnational: Time Keep is your personal offline space for memories and
+        message:
+          Platform.OS === 'ios'
+            ? `Fetnational: Time Keep is your personal offline space for memories and
+focus. Add stories with photos and keep them as part of your private
+collection. Create workouts, set a timer, and add a photo when you’re
+done — everything stays saved in your training memories. You can also
+set reminders for any date and time, give them names, and get
+notifications on your phone. Fetnational: Time Keep helps you stay
+organized, mindful, and in rhythm with yourself.`
+            : `888 Time Keep is your personal offline space for memories and
 focus. Add stories with photos and keep them as part of your private
 collection. Create workouts, set a timer, and add a photo when you’re
 done — everything stays saved in your training memories. You can also
@@ -39,20 +48,39 @@ organized, mindful, and in rhythm with yourself.`,
           <Text style={styles.timekeeptitle}>About the app</Text>
         </View>
 
-        <Image
-          source={require('../../assets/images/timekeeponb5.png')}
-          style={styles.timekeeplogo}
-        />
+        {Platform.OS === 'ios' ? (
+          <Image
+            source={require('../../assets/images/timekeeponb5.png')}
+            style={styles.timekeeplogo}
+          />
+        ) : (
+          <Image
+            source={require('../../assets/images/andrlogo.png')}
+            style={styles.timekeeplogo}
+          />
+        )}
 
-        <Text style={styles.timekeepdescription}>
-          Fetnational: Time Keep is your personal offline space for memories and
-          focus. Add stories with photos and keep them as part of your private
-          collection. Create workouts, set a timer, and add a photo when you’re
-          done — everything stays saved in your training memories. You can also
-          set reminders for any date and time, give them names, and get
-          notifications on your phone. Fetnational: Time Keep helps you stay
-          organized, mindful, and in rhythm with yourself.
-        </Text>
+        {Platform.OS === 'ios' ? (
+          <Text style={styles.timekeepdescription}>
+            Fetnational: Time Keep is your personal offline space for memories
+            and focus. Add stories with photos and keep them as part of your
+            private collection. Create workouts, set a timer, and add a photo
+            when you’re done — everything stays saved in your training memories.
+            You can also set reminders for any date and time, give them names,
+            and get notifications on your phone. Fetnational: Time Keep helps
+            you stay organized, mindful, and in rhythm with yourself.
+          </Text>
+        ) : (
+          <Text style={styles.timekeepdescription}>
+            888 Time Keep is your personal offline space for memories and focus.
+            Add stories with photos and keep them as part of your private
+            collection. Create workouts, set a timer, and add a photo when
+            you’re done — everything stays saved in your training memories. You
+            can also set reminders for any date and time, give them names, and
+            get notifications on your phone. Fetnational: Time Keep helps you
+            stay organized, mindful, and in rhythm with yourself.
+          </Text>
+        )}
         <View
           style={{ flexDirection: 'row', justifyContent: 'center', gap: 15 }}
         >
@@ -74,28 +102,32 @@ organized, mindful, and in rhythm with yourself.`,
               </View>
             </LinearGradient>
           </TouchableOpacity>
-          <TouchableOpacity
-            style={{ alignSelf: 'center' }}
-            activeOpacity={0.7}
-            onPress={() =>
-              Linking.openURL(
-                'https://apps.apple.com/us/app/fetnational-time-keep/id6754980185',
-              )
-            }
-          >
-            <LinearGradient
-              colors={['#002640', '#FFFFFF36']}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-              style={styles.timekeepbtngradborder}
+          {Platform.OS === 'ios' && (
+            <TouchableOpacity
+              style={{ alignSelf: 'center' }}
+              activeOpacity={0.7}
+              onPress={() =>
+                Linking.openURL(
+                  'https://apps.apple.com/us/app/fetnational-time-keep/id6754980185',
+                )
+              }
             >
-              <View style={[styles.timekeepbtnborders, { width: 57 }]}>
-                <View style={styles.timekeepbtnwrp}>
-                  <Image source={require('../../assets/images/shareapp.png')} />
+              <LinearGradient
+                colors={['#002640', '#FFFFFF36']}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.timekeepbtngradborder}
+              >
+                <View style={[styles.timekeepbtnborders, { width: 57 }]}>
+                  <View style={styles.timekeepbtnwrp}>
+                    <Image
+                      source={require('../../assets/images/shareapp.png')}
+                    />
+                  </View>
                 </View>
-              </View>
-            </LinearGradient>
-          </TouchableOpacity>
+              </LinearGradient>
+            </TouchableOpacity>
+          )}
         </View>
       </View>
     </TimeKeepLayout>
@@ -113,6 +145,7 @@ const styles = StyleSheet.create({
     height: 220,
     alignSelf: 'center',
     marginBottom: 30,
+    borderRadius: 32,
   },
   timekeeptitle: {
     fontFamily: 'RedHatDisplay-SemiBold',

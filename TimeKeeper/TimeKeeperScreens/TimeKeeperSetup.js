@@ -281,10 +281,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#fff',
     fontFamily: 'RedHatDisplay-SemiBold',
+    textAlign: 'center',
   },
   timekeepbtnwrp: {
     height: 73,
     borderRadius: 10,
+    paddingHorizontal: 12,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#135CAA',

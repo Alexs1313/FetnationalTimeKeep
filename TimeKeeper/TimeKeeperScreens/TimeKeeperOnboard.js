@@ -55,7 +55,14 @@ const TimeKeeperOnboard = () => {
       >
         {currentTimeKeeperOnboardIdx === 3 && (
           <View style={{ alignSelf: 'center', marginBottom: 80 }}>
-            <Image source={require('../../assets/images/timekeeponb5.png')} />
+            {Platform.OS === 'ios' ? (
+              <Image source={require('../../assets/images/timekeeponb5.png')} />
+            ) : (
+              <Image
+                source={require('../../assets/images/andrlogo.png')}
+                style={{ width: 220, height: 220, borderRadius: 50 }}
+              />
+            )}
           </View>
         )}
 
@@ -83,11 +90,20 @@ const TimeKeeperOnboard = () => {
                 {currentTimeKeeperOnboardIdx === 2 &&
                   `Create your profile, add a photo, name and an inspiring phrase.
 This is your motto - it will remind you every day why you play.`}
-                {currentTimeKeeperOnboardIdx === 3 &&
+
+                {Platform.OS === 'ios' &&
+                  currentTimeKeeperOnboardIdx === 3 &&
                   `Fetnational: Time Keep does not collect, store or transmit any of your personal data.
 All photos, texts and settings are stored only on your device.
 The application works completely offline and does not have access to the network.`}
+                {Platform.OS === 'android' &&
+                  currentTimeKeeperOnboardIdx === 3 &&
+                  `888 Time Keep does not collect, store or transmit any of your personal data.
+All photos, texts and settings are stored only on your device.
+The application works completely offline and does not have access to the network.`}
               </Text>
+
+              <Text></Text>
               <TouchableOpacity
                 style={{ alignSelf: 'center', marginTop: 26 }}
                 activeOpacity={0.7}
@@ -127,7 +143,8 @@ const styles = StyleSheet.create({
     padding: 30,
     paddingBottom: 60,
     backgroundColor: '#2B2B2B',
-    borderRadius: 29,
+    borderTopLeftRadius: 29,
+    borderTopRightRadius: 29,
     borderBottomColor: '#2B2B2B',
   },
   timekeeptitle: {

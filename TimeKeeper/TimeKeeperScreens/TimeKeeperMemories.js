@@ -257,7 +257,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: 26,
+    paddingHorizontal: 14,
   },
   btnText: {
     color: '#fff',

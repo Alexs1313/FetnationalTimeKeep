@@ -77,7 +77,8 @@ const TimeKeeperTabs = () => {
 const styles = StyleSheet.create({
   tabBorders: {
     height: 125,
-    borderRadius: 30,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
     padding: Platform.OS === 'ios' ? 1 : 0,
     margin: Platform.OS === 'ios' ? 0 : 1,
   },

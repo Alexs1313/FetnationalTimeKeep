@@ -63,10 +63,17 @@ const TimeKeeperHome = () => {
           </View>
         </View>
 
-        <Image
-          source={require('../../assets/images/timekeeponb5.png')}
-          style={styles.timekeeplogo}
-        />
+        {Platform.OS === 'ios' ? (
+          <Image
+            source={require('../../assets/images/timekeeponb5.png')}
+            style={styles.timekeeplogo}
+          />
+        ) : (
+          <Image
+            source={require('../../assets/images/andrlogo.png')}
+            style={styles.timekeeplogo}
+          />
+        )}
         <TouchableOpacity
           style={{ alignSelf: 'center', width: '62%' }}
           activeOpacity={0.7}
@@ -155,6 +162,7 @@ const styles = StyleSheet.create({
     height: 110,
     alignSelf: 'center',
     marginBottom: 20,
+    borderRadius: 32,
   },
   timekeeepregcn: {
     width: '100%',
@@ -174,6 +182,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#FFFFFF',
     lineHeight: 22,
+    width: '80%',
   },
   timekeepinput: {
     height: 46,
@@ -234,6 +243,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#fff',
     fontFamily: 'RedHatDisplay-SemiBold',
+    textAlign: 'center',
   },
   timekeepbtnwrp: {
     height: 73,
@@ -241,6 +251,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#135CAA',
+    paddingHorizontal: 8,
   },
   timekeepbtngradborder: { borderRadius: 10 },
   timekeepbtnborders: {
